@@ -153,6 +153,13 @@ body {
   min-height: 40px;
 }
 
+#main-text {
+  padding: 20px;
+  background: #a33;
+  border: 2px solid #911;
+  margin-bottom: 20px;
+}
+
 #menu-tile, #specials-tile, #map-tile {
   height: 250px;
   width: 100%;
