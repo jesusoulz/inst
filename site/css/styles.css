@@ -339,6 +339,10 @@ body {
 @media (max-width: 479px) {
 
   /* Home page */
+  .jumbotron {
+    height: 550px;
+  }
+
   #menu-tile, #specials-tile {
     width: 250px;
     margin: 0 auto 15px;
