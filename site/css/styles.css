@@ -2,7 +2,8 @@ body {
   font-size: 16px;
   color: #fff;
   background-color: #88f;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 300;
 }
 
 /** HEADER **/
@@ -66,6 +67,7 @@ body {
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #c22;
+  background: rgba(220, 180, 180, 0.5);
 }
 .navbar-header button.navbar-toggle {
   clear: both;
@@ -78,28 +80,40 @@ body {
   margin-top: 30px;
   padding-top: 35px;
   padding-bottom: 30px;
-  background-color: #222;
+  background-color: #911;
   border-top: 0;
+  font-weight: 300;
 }
-.panel-footer div.row {
+/*.panel-footer div.row {
   margin-bottom: 35px;
-}
+}*/
 #hours, #address {
   line-height: 2;
 }
 #hours > span, #address > span {
   font-size: 1.3em;
-}
-#address p {
-  color: #557c3e;
-  font-size: .8em;
-  line-height: 1.8;
-}
-#testimonials {
+  font-weight: 400;
   font-style: italic;
 }
-#testimonials p:nth-child(2) {
-  margin-top: 25px;
+#memberships {
+	padding: 20px;
+}
+#natp-logo {
+	height: 170px;
+	width: 250px;
+	vertical-align: middle;
+}
+#irs-efile {
+	padding-top: 40px;
+}
+#irs-efile-logo {
+	height: 80px;
+	width: 220px;
+	vertical-align: middle;
+}
+#ghcc-logo {
+	height: 170px;
+	width: 100px;
 }
 /* END FOOTER */
 
@@ -107,6 +121,7 @@ body {
 
 /* HOME PAGE */
 .jumbotron {
+  font-family: 'Montserrat', sans-serif;
   background: url('../img/business-people.jpg') fixed;
   margin-top: 0px;
   position: relative;
@@ -132,6 +147,7 @@ body {
 }
 
 .img-responsive {
+  display: block;
   margin: 0 auto;
   min-width: 40px;
   min-height: 40px;
@@ -142,18 +158,18 @@ body {
   width: 100%;
   margin-bottom: 15px;
   position: relative;
-  border: 2px solid #3F0C1F;
+  border: 2px solid #911;
   overflow: hidden;
 }
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
 #menu-tile {
-  background: url('../images/menu-tile.jpg') no-repeat;
+  background: url('../img/services.jpg') no-repeat;
   background-position: center;
 }
 #specials-tile {
-  background: url('../images/specials-tile.jpg') no-repeat;
+  background: url('../img/contact.jpg') no-repeat;
   background-position: center;
 }
 #menu-tile span, #specials-tile span, #map-tile span {
@@ -317,4 +333,15 @@ body {
     width: 360px;
     margin: 0 auto 15px;
   }
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+
+  /* Home page */
+  #menu-tile, #specials-tile {
+    width: 250px;
+    margin: 0 auto 15px;
+  }
+
 }
