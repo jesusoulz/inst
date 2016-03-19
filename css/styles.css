@@ -1,0 +1,320 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #88f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: rgba(150, 150, 255, 0.8);
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  width: 150px;
+  height: 156px;
+  margin: -20px 15px -20px 0px;
+}
+
+#en-img {
+  width: 25px;
+  height: 20px;
+  margin: 50px 15px -20px 0px;
+  border-radius: 5px;
+}
+
+#es-img {
+  width: 25px;
+  height: 20px;
+  margin: 50px 15px -20px 0px;
+  border-radius: 5px;
+}
+
+#nav-list {
+  margin-top: 18px;
+}
+#nav-list a {
+  color: #fff;
+  text-align: center;
+    border-radius: 5px;
+}
+#nav-list a:hover {
+  background: #77f;
+}
+#nav-list a span {
+  font-size: 1.5em;
+  color: #c22;
+}
+
+#phone {
+  padding-bottom: 20px;
+}
+
+#phone a { /* Phone number */
+  text-align: left;
+  padding-bottom: 0;
+}
+#phone div { /* Call us today! */
+  color: #fff;
+  text-align: left;
+  font-size: 20px;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #c22;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -45px;
+}
+/* END HEADER */
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */
+
+
+
+/* HOME PAGE */
+.jumbotron {
+  background: url('../img/business-people.jpg') fixed;
+  margin-top: 0px;
+  position: relative;
+  z-index: 0;
+  padding: 150px 0px;
+}
+
+.jumbotron-text {
+  background: rgba(0, 0, 100, 0.2);
+  text-shadow: 0px 0px 15px black;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.jumbotron h1 {
+  padding-top: 80px;
+}
+
+.jumbotron p {
+  padding: 0px 30px 50px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.img-responsive {
+  margin: 0 auto;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile {
+  background: url('../images/menu-tile.jpg') no-repeat;
+  background-position: center;
+}
+#specials-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+/* END HOME PAGE */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .jumbotron {
+    height: 650px;  
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('..img/pts-logo-md.png') no-repeat;
+    width: 150px;
+    height: 156px;
+    margin: -20px 5px -20px 0;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .jumbotron {
+    height: 650px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Header */
+  #logo-img {
+    background: url('..img/pts-logo-md.png') no-repeat;
+    width: 100px;
+    height: 103px;
+    margin: -5px 5px -15px 0;
+  }
+
+  #nav-list a {
+  font-size: .8em;
+  }
+
+  #nav-list a span {
+    font-size: 1.5em;
+  }
+
+  #nav-list {
+    margin-top: 10px;
+  }
+
+  #en-img {
+    margin: 40px 5px -20px 0;
+  }
+
+  #es-img {
+    margin: 40px 5px -20px 0;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .jumbotron {
+    height: 650px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  #logo-img {
+    background: url('../img/pts-logo-md.png') no-repeat;
+    width: 80px;
+    height: 83px;
+    margin: -10px 5px -15px 20px;
+  }
+
+  #en-img {
+    margin: 15px 5px -15px 20px;
+  }
+
+  #es-img {
+    margin: 15px 5px -15px 20px;
+  }
+
+  #collapsable-nav {
+    background: rgba(150, 150, 255, 1);
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  
+  #call-btn {
+  position: relative;
+  z-index: 1;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin-top: 60px;
+    padding: 10px;
+    background-color: #eef;
+    color: #c22;
+  }
+
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
+  /* Home Page */
+  .jumbotron {
+    background: url('../img/business-people-xs.jpg') fixed;
+    height: 500px;
+    margin-top: -120px;
+  }
+  .jumbotron h1 {
+  padding-top: 20px;
+  }
+  .jumbotron p {
+  padding: 0px 30px 20px;
+  font-weight: bold;
+  font-size: 1em;
+  }
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+}
