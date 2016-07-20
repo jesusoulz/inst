@@ -189,7 +189,7 @@ a:visited {
 }
 
 #main-text.no-jumbotron {
-  padding: 120px;
+  padding-top: 120px;
 }
 
 #main-text-logo {
@@ -380,6 +380,9 @@ a:visited {
   }
   #main-text {
     padding: 10px;
+  }
+  #main-text.no-jumbotron {
+    padding-top: 20px;
   }
   #services-tile, #contact-tile {
     width: 360px;
