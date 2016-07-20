@@ -18,7 +18,7 @@ h3 {
 }
 
 a:link {
-  red
+  color: red;
 }
 
 a:visited {
