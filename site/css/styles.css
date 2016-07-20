@@ -17,6 +17,14 @@ h3 {
   text-indent: 0px;
 }
 
+a:link {
+  red
+}
+
+a:visited {
+  color: gray;
+}
+
 /** HEADER **/
 #header-nav {
   background-color: rgba(150, 150, 255, 0.8);
@@ -135,7 +143,7 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   background: url('../img/business-people.jpg') fixed;
   background-size: auto;
-  margin-top: 0px;
+  margin: 0px;
   position: relative;
   z-index: 0;
   padding: 200px 15px;
@@ -149,7 +157,7 @@ h3 {
 }
 
 .jumbotron p {
-  padding: 0px 30px 50px;
+  padding: 0px 30px 20px;
   font-weight: bold;
   font-size: 1.5em;
 }
@@ -172,12 +180,16 @@ h3 {
 }
 
 #main-text {
-  padding: 120px;
+  padding: 30px 120px 120px;
   background: #911;
   border: 2px solid #a33;
   margin-bottom: 20px;
   font-size: 20px;
   line-height: 1.5;
+}
+
+#main-text.no-jumbotron {
+  padding: 120px;
 }
 
 #main-text-logo {
