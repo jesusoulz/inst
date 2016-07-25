@@ -1,0 +1,4 @@
+to-do:
+-populate contact.html main-text
+-translate hours and addresses
+-translate main-text
