@@ -362,6 +362,7 @@ p::first-letter {
   /* End Header */
 
   /* Home Page */
+
   .jumbotron {
     height: 650px;
   }
@@ -434,6 +435,11 @@ p::first-letter {
   /* End Footer */
 
   /* Home Page */
+
+  h2 {
+    font-size: 1.2em;
+  }
+
   .jumbotron {
     background: url('../img/business-people-xs.jpg') fixed;
     height: 500px;
