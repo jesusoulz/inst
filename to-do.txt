@@ -1,4 +1,5 @@
 to-do:
--populate contact.html main-text
--translate hours and addresses
--translate main-text
+-facelift layout
+-get forms from OA
+-get info from brochure
+-no mortgages

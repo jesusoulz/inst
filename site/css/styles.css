@@ -9,14 +9,12 @@ html,body
 
 body {
   font-size: 16px;
-  color: #fff;
-  background-color: #88f;
-  font-family: 'Open sans', sans-serif;
+  color: #000;
+  background: url('../img/content-background.jpg');
   font-weight: 300;
 }
 
 p {
-  text-indent: 20px;
   text-align: justify;
 }
 
@@ -27,7 +25,7 @@ h3 {
 }
 
 a:link {
-  color: black;
+  color: blue;
 }
 
 a:visited {
@@ -36,7 +34,11 @@ a:visited {
 
 /** HEADER **/
 #header-nav {
-  background-color: rgba(150, 150, 255, 0.8);
+  background: rgba(255, 255, 255, 0.5); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(white, rgba(136, 136, 255, 0.5)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, rgba(136, 136, 255, 0.5)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, rgba(136, 136, 255, 0.5)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, rgba(136, 136, 255, 0.5)); /* Standard syntax */
   border-radius: 0;
   border: 0;
 }
@@ -65,16 +67,16 @@ a:visited {
   margin-top: 18px;
 }
 #nav-list a {
-  color: #fff;
+  color: #222;
   text-align: center;
   border-radius: 5px;
 }
 #nav-list a:hover {
-  background: #77f;
+  background: #fff;
 }
 #nav-list a span {
   font-size: 1.5em;
-  color: #c22;
+  color: #d22;
 }
 
 #phone {
@@ -86,7 +88,7 @@ a:visited {
   padding-bottom: 0;
 }
 #phone div { /* Call us today! */
-  color: #fff;
+  color: #222;
   text-align: left;
   font-size: 20px;
   font-style: italic;
@@ -94,8 +96,8 @@ a:visited {
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #c22;
-  background: rgba(220, 180, 180, 0.5);
+  border: 1px solid #fff;
+  background: rgba(136, 136, 255, 0.8);
 }
 .navbar-header button.navbar-toggle {
   clear: both;
@@ -108,7 +110,10 @@ a:visited {
   margin-top: 30px;
   padding-top: 35px;
   padding-bottom: 30px;
-  background-color: #911;
+  background: -webkit-linear-gradient(to right, rgba(255,255,255,0), red, rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to right, rgba(255,255,255,0), red, rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to right, rgba(255,255,255,0), red, rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(255,255,255,0.7), white, rgba(255,255,255,0.7)); /* Standard syntax */
   border-top: 0;
   font-weight: 300;
 }
@@ -130,7 +135,13 @@ a:visited {
 	height: 170px;
 	width: 250px;
 	vertical-align: middle;
+  float: right;
 }
+
+#natp-logo.footer {
+  float: initial;
+}
+
 #irs-efile {
 	padding-top: 40px;
 }
@@ -190,11 +201,41 @@ a:visited {
 
 #main-text {
   padding: 30px 120px 120px;
-  background: #911;
-  border: 2px solid #a33;
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(white, #88f); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, #88f); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, #88f); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, #88f); /* Standard syntax */
+  font-family: 'Open sans', sans-serif;
   margin-bottom: 20px;
-  font-size: 20px;
   line-height: 1.5;
+}
+
+#main-text > p {
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(to right, rgba(255,255,255,0), #bbf, rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to right, rgba(255,255,255,0), #bbf, rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to right, rgba(255,255,255,0), #bbf, rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(255,255,255,0), #bbf, rgba(255,255,255,0)); /* Standard syntax */
+}
+
+p::first-letter {
+  float: left;
+  color: #449;
+  font-size: 3em;
+  line-height: 45px;
+  padding-top: 9px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-weight: bold;
+}
+
+.service-icon {
+  float: left;
+  clear: left;
+  height: 60px;
+  width: 60px;
+  margin: 10px 10px 0px 0px;
 }
 
 #main-text.no-jumbotron {
@@ -206,9 +247,24 @@ a:visited {
   max-width: 300px;
 }
 
+.main-text-title {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(to right, rgba(255,255,255,0), red, rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to right, rgba(255,255,255,0), red, rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to right, rgba(255,255,255,0), red, rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(255,255,255,0), red, rgba(255,255,255,0)); /* Standard syntax */
+  color: white;
+}
+
 .main-text-img {
-  
   border: 1px solid #fff;
+}
+
+#what-we-do-img {
+  float: right;
+  margin: 10px;
+  max-height: 200px;
+  max-width: 200px;
 }
 
 #home-tiles {
@@ -331,7 +387,7 @@ a:visited {
   }
 
   #collapsable-nav {
-    background: rgba(150, 150, 255, 1);
+    background: white;
   }
 
   #collapsable-nav a { /* Collapsed nav services text */
@@ -414,6 +470,12 @@ a:visited {
   #services-tile, #contact-tile {
     width: 250px;
     margin: 0 auto 15px;
+  }
+
+  #what-we-do-img {
+    float: initial;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 
 }
